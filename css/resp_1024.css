@@ -1,0 +1,106 @@
+/*нетбуки: 1024 пікселів*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	body {
+		background: orange_;
+		/*width: 53%;
+		width: 66,7%;
+		outline: 0px solid black;*/
+	}
+
+	/*HEADER - LOGO + CONTACTS*/
+
+	.header-top {
+    	width: auto;
+    	/*width: max-content;*/
+	}
+	
+	#logo-header {
+		margin-left: 15px;
+	}
+
+	.contacts {
+		margin-top: 7px;
+		margin-right: 12%;
+	}
+
+	.contacts div {	
+    	margin-right: 15px;
+    	float: none;
+	}
+
+	.contacts div:last-child {
+    	margin-right: 15px;
+	}
+
+
+	/*HEADER MENU*/
+	.header-nav ul {
+	    margin-left: 24px;
+	}
+
+	.header-nav li {
+	    margin-right: 62px;
+	}
+
+
+
+	/*ABOUT US*/
+	.main-about-Us .container {
+		width: fit-content;
+	}
+
+	.main-about-competence{
+		margin-left: auto;
+	}
+
+	.competence-item {
+		width: 178px;
+	}
+
+	
+	/*MISSION SECTION*/
+	.customers-section .section.mission .item .m_content, 
+	.customers-section .section.success .item .s_content {
+		width: fit-content;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 100px;
+	}
+
+
+	/*TESTIMONIALS*/
+	html body main.main section.testimonials div.container_h700 div.items div.item.i2 {
+		display: none;
+	}
+
+	html body main.main section.testimonials div.container_h700 div.t_dots {
+		left: 1135px;
+		/*min-left 835px*/
+		left: calc(500px + (1135 - 700) * var(--screenAdapt));
+	}
+
+
+	/*SUBSCRIBE*/
+	.subscribe_section .container_h700 .form .input.but {
+		display: block;
+		margin: 10px auto;
+	}
+
+	/*FOOTER*/
+	.footer .container_h700 .item.i_4 {
+		float: none;
+		display: block ruby;
+		margin: auto;
+	}
+
+	.footer .container_h700 .item.i_4 div {
+		margin-left: 15px;
+		display: inline-block;
+	}
+
+	.footer .container_h700 .item.i_4 {
+		margin-left: 100px;
+	}
+
+}

@@ -1,0 +1,76 @@
+/*екран монітора комп’ютера: від 1280 пікселів та вище*/
+/*1920px - 100%
+1280px - 66,7%
+1024px - 53%
+ 768px - 40%
+ 480px - 25%
+ 375px - 19,5%*/
+
+
+@media screen and (min-width: 1280px) {
+	body {
+		background: red_;
+		width: 66,7%;
+		width: 100%;
+	}
+
+	.header-top {
+    	width: max-content;
+    	width: auto;
+    	margin-left: 10px;
+	}
+
+	.header-nav ul {
+		margin-left: 10px;
+	}
+
+	html body header div.header-top div.container div.contacts {
+		margin-right: 20px;
+	}
+
+	/*MAIN ABOUT US*/
+	.main-about-competence {
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+	/*MISSION SECTION*/
+	.customers-section .section.mission .item .m_content {
+		margin-left: 20%;
+	}
+
+
+	/*NEWS SECTION*/
+	.news-section .container .news-content .news-item a {
+		margin-left: 270px;
+	}
+
+	/*TESTIMONIALS*/
+	.testimonials .container_h700 .map-bg {
+		left: 229px;
+		/*min-left 20px*/
+		/*left: calc(20px + (229/2 - 20) * var(--screenAdapt));*/
+	}
+
+	.testimonials .text {
+		left: 300px;
+		/*min-left 180px*/
+		/*left: calc(180px + (374/2 - 180) * var(--screenAdapt));*/
+	}
+
+	.testimonials .items {
+		left: 775px;
+		/*min-left 470px*/
+		left: calc(430px + (775 - 600) * var(--screenAdapt));
+	}
+
+	.testimonials .item {
+		width: 300px;
+	}
+
+	html body main.main section.testimonials div.container_h700 div.t_dots {
+		left: 1135px;
+		/*min-left 835px*/
+		left: calc(680px + (1135 - 940) * var(--screenAdapt));
+	}
+}

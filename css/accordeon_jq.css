@@ -1,0 +1,31 @@
+/* accordion-JQ */
+.accordeon-jq {
+  width: 80%;
+  margin-left: 30px;
+  position: relative;
+  box-shadow: 0px 1px 7px #DBDBDB;
+}
+
+.accordeon-jq .head {
+  background-color: #FFFFFF;
+  color: #563e6e;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.accordeon-jq .head:hover {
+  background-color: #f6f7eb;
+}
+
+.accordeon-jq .content {
+  padding: 20px 30px;
+  display: none;
+  color: #333333;
+}
+
+.accordeon-jq .content p {
+  margin: 0;
+  padding: 35px;
+  background-color: #f6f7eb;
+
+}

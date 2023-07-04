@@ -1,0 +1,62 @@
+
+/* Медиазапрос
+@media - запрос. Все, что в его скопе, будет относиться к тому параметру, который задан в скобках.
+Эти стили будут действовать для экранов, ширина которых ниже 1180px.
+Для экранов шире 1180px, будет работать style.css
+screeen - с чем мы работаем
+and - что мы хотим делать
+min-width - минимальная ширина экрана или браузера, к которой будут применены определенные стили. 
+Если к-л значение будет ниже min-width, то стили будут проигнорированы.
+max-width - противоположное
+*/
+@media screen and (max-width: 1180px) {
+
+	.container {
+		width: 900px;
+	}
+
+	.contacts div {
+		margin-right: 20px;
+	}
+
+	#logo-header {
+		width: 120px;
+		height: 40px;
+		float: left;
+		margin-top: 22px;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 100%;
+	}
+
+	.contacts {
+		margin-top: 5px;
+	}
+
+	.contacts div {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#logo-header {
+		margin-top: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	.contacts {
+		margin-top: 5px;
+		float: none;
+	}
+
+	.header-top {
+		height: 130px;
+		text-align: center;
+	}
+}

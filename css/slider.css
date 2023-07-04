@@ -1,0 +1,71 @@
+/*СЛАЙДЕР*/
+/*общий контейнер для всего слайдера*/
+.slider {
+	 max-width: 90%;
+	 margin: 50px auto;
+}
+
+/*СЛАЙДЕР: ГЛАВНАЯ КАРТИНКА*/
+/*общий контейнер для большой кртинки*/
+.slider .slider-img {
+	position: relative;
+	max-width: 100%;
+	height: 400px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*кнопка предыдущее фото*/
+.prev-btn {
+	position: absolute;
+	top:50%;
+	left: 0;
+}
+
+/*кнопка следующее фото*/
+.next-btn {
+	position: absolute;
+	top:50%;
+	right: 0;
+}
+
+/*установить параметры большой картинки под размер контейнера*/
+.slider .slider-img img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*СЛАЙДЕР: КАРУСЕЛЬ КАРТИНОК*/
+/*общий блок для маленьких картинок*/
+.slider .slider-small-img {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-height: 200px;
+	white-space: nowrap; /*размещает блоки в линию */
+	overflow: hidden;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+} 
+
+/*установить размер и порядок контейнеров для маленьких картинок*/
+.slider .slider-small-img li {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	list-style: none;
+	margin: 5px;
+	text-align: center;
+}
+
+/*установить размер маленькой картинки на всю ширину*/
+.slider .slider-small-img li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*задать выбранному фото рамку зеленого цвета*/
+.slider .slider-small-img li.active {
+	border: 2px solid green;
+}

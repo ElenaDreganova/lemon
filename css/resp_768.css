@@ -1,0 +1,153 @@
+/*планшети: від 768 пікселів та вище */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	body {
+		background: gray_;
+		/*width: 40%;
+		width: 66,7%;*/
+	}
+
+	/*HEADER - LOGO + CONTACTS*/
+
+	.header-top {
+    	height: 100px;
+    	width: auto;
+    	/*width: max-content;*/
+	}
+
+	#logo-header {
+		margin-left: 15px;
+	}
+
+	#logo-header img {
+		height: 70px;
+	}
+
+	.contacts {
+		font-size: 18px;
+    	margin-left: 30%;
+    	margin-top: 15px;
+    	float: none;
+	}
+
+	.contacts div {
+	    margin-right: 42px;
+	    float: none;
+	}
+
+	.contacts div:last-child {
+    margin-right: 15px;
+	}
+
+
+
+	/*HEADER MENU*/
+
+	.header-nav ul {
+	    margin-left: 24px;
+	}
+
+	.header-nav li {
+	    margin-right: 20px;
+	}
+
+
+	/*MAIN HEADER*/
+
+	.header-promo h2 {
+		font-size: 48px;
+		margin-bottom: 3%;
+	}
+
+	.header-promo a {
+
+	}
+
+	
+	/*ABOUT US*/
+	.main-about-Us .container {
+		width: fit-content;
+	}
+
+	.about-description p {
+		margin: 0 1%;
+		width: 95%;
+	}
+
+	.main-about-competence {
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+
+	.competence-item {
+		width: 145px;
+		height: 280px;
+		margin-right: 5px;
+	}
+
+	
+	/*MISSION SECTION*/
+	.customers-section .section.mission .item .m_content, 
+	.customers-section .section.success .item .s_content {
+		width: fit-content;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 50px;
+	}
+
+
+	/*TESTIMONIALS*/
+	html body main.main section.testimonials div.container_h700 div.items div.item.i2 {
+		display: none;
+	}
+
+	html body main.main section.testimonials div.container_h700 div.t_dots {
+		left: 1135px;
+		/*min-left 835px*/
+		left: calc(500px + (1135 - 700) * var(--screenAdapt));
+	}
+	
+
+	/*ASKED SECTIOIN*/
+	.asked-section .item.right h2 {
+		font-size: 25px;
+		width: fit-content;
+	}
+
+	.asked-section .item.right p { 
+		padding-right: 30px;
+		width: 75%;
+	}
+
+
+	/*SUBSCRIBE*/
+	.subscribe_section .container_h700 .form .input {
+		display: block;
+		margin: 10px auto;
+	}
+
+	.subscribe_section .container_h700 .form {
+		margin-top: 15px;
+	}
+	
+	.subscribe_section .container_h700 {
+		height: auto;
+	}
+
+
+	/*FOOTER*/
+	.footer .container_h700 .item.i_4 {
+		float: none;
+		display: block ruby;
+		margin: auto;
+	}
+
+	.footer .container_h700 .item.i_4 div {
+		margin-left: 20px;
+	}
+
+	.footer .container_h700 .item.i_4 h2 {
+		display: none;
+	}
+}
